@@ -1,4 +1,4 @@
-Documentação Software Infatec - João Pedro Fontinele Lima 
+Documentação Software Infatec - João Pedro Fontinele Lima - Projeto feito em PHP
 
 Configuração Inicial - 
 Dentro da pasta do projeto, rodar o comando ‘composer install’ no terminal
