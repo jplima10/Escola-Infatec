@@ -1,8 +1,19 @@
 Documentação Software Infatec - João Pedro Fontinele Lima - Projeto feito em PHP
 
 Configuração Inicial - 
+
 Dentro da pasta do projeto, rodar o comando ‘composer install’ no terminal
 
+Configurando o banco de dados -> O banco de dados utilizado é o Mysql -> Dentro do WorkBench é necessario criar um schema com o nome de 'infatec', após a criação o arquivo .env na raiz do projeto tem que tá com as seguintes informações:
+
+DB_CONNECTION=mysql
+DB_HOST=127.0.0.1
+DB_PORT=3306
+DB_DATABASE=infatec
+DB_USERNAME=root
+DB_PASSWORD=root
+
+Após esses passos, rodar o comando 'php artisan migrate', com isso o banco de dados será conectado.
 
 Logo em segui rodar o comando ‘php artisan key:generate’ 
 
