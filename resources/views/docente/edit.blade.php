@@ -31,14 +31,6 @@
         </div>
     </form>
 
-    <script>
-        function confirmDelete() {
-            if (confirm('Tem certeza que deseja excluir este registro?')) {
-                document.getElementById('delete-form').submit();
-            }
-        }
-    </script>
-
     <form id="delete-form" method="POST" action="{{ route('docente.destroy', $docente->id) }}" style="display: none;">
         @csrf
         @method('DELETE')

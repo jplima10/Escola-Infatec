@@ -6,7 +6,8 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>{{ env('APP_NAME') }}</title>
     <link rel="stylesheet" href="{{ asset('css/index.css') }}">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"> <!-- Adicionando Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"> 
+    <script src="{{ asset('js/index.js') }}"></script>
 </head>
 <body>
     <div class="container">
@@ -24,15 +25,5 @@
             @yield('content')
         </div>
     </div>
-    <script>
-        function toggleOptions() {
-            var options = document.getElementById("options");
-            if (options.style.display === "block") {
-                options.style.display = "none"; // Se as opções estão visíveis, oculta
-            } else {
-                options.style.display = "block"; // Se as opções estão ocultas, exibe
-            }
-        }
-    </script>
 </body>
 </html>
